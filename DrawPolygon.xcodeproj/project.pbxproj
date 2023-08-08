@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EB013092A8219AD00F58462 /* DrawPolygonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013082A8219AD00F58462 /* DrawPolygonApp.swift */; };
+		4EB0130B2A8219AD00F58462 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0130A2A8219AD00F58462 /* ContentView.swift */; };
+		4EB0130D2A8219AF00F58462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0130C2A8219AF00F58462 /* Assets.xcassets */; };
+		4EB013102A8219AF00F58462 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB0130F2A8219AF00F58462 /* Preview Assets.xcassets */; };
+		4EB013242A8219AF00F58462 /* DrawPolygonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013232A8219AF00F58462 /* DrawPolygonUITests.swift */; };
+		4EB013262A8219AF00F58462 /* DrawPolygonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013252A8219AF00F58462 /* DrawPolygonUITestsLaunchTests.swift */; };
+		4EB0133F2A8219C500F58462 /* BottomActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013332A8219C400F58462 /* BottomActionView.swift */; };
+		4EB013402A8219C500F58462 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013362A8219C500F58462 /* CanvasView.swift */; };
+		4EB013412A8219C500F58462 /* CanvasShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013372A8219C500F58462 /* CanvasShape.swift */; };
+		4EB013422A8219C500F58462 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013382A8219C500F58462 /* CanvasViewModel.swift */; };
+		4EB013432A8219C500F58462 /* CanvasProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013392A8219C500F58462 /* CanvasProperties.swift */; };
+		4EB013442A8219C500F58462 /* HashableCGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133A2A8219C500F58462 /* HashableCGPoint.swift */; };
+		4EB013452A8219C500F58462 /* CanvasEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133B2A8219C500F58462 /* CanvasEvent.swift */; };
+		4EB013462A8219C500F58462 /* PolygonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133D2A8219C500F58462 /* PolygonUtils.swift */; };
+		4EB013472A8219C500F58462 /* PolygonLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133E2A8219C500F58462 /* PolygonLine.swift */; };
+		4EB013542A8219F700F58462 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013382A8219C500F58462 /* CanvasViewModel.swift */; };
+		4EB013552A8219F700F58462 /* CanvasShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013372A8219C500F58462 /* CanvasShape.swift */; };
+		4EB013562A8219F700F58462 /* HashableCGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133A2A8219C500F58462 /* HashableCGPoint.swift */; };
+		4EB013572A8219F700F58462 /* CanvasProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013392A8219C500F58462 /* CanvasProperties.swift */; };
+		4EB013582A8219F700F58462 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013362A8219C500F58462 /* CanvasView.swift */; };
+		4EB013592A8219F700F58462 /* CanvasEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133B2A8219C500F58462 /* CanvasEvent.swift */; };
+		4EB0135A2A8219F800F58462 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013382A8219C500F58462 /* CanvasViewModel.swift */; };
+		4EB0135B2A8219F800F58462 /* CanvasShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013372A8219C500F58462 /* CanvasShape.swift */; };
+		4EB0135C2A8219F800F58462 /* HashableCGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133A2A8219C500F58462 /* HashableCGPoint.swift */; };
+		4EB0135D2A8219F800F58462 /* CanvasProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013392A8219C500F58462 /* CanvasProperties.swift */; };
+		4EB0135E2A8219F800F58462 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013362A8219C500F58462 /* CanvasView.swift */; };
+		4EB0135F2A8219F800F58462 /* CanvasEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133B2A8219C500F58462 /* CanvasEvent.swift */; };
+		4EB013602A8219FB00F58462 /* PolygonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133D2A8219C500F58462 /* PolygonUtils.swift */; };
+		4EB013612A8219FB00F58462 /* PolygonLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133E2A8219C500F58462 /* PolygonLine.swift */; };
+		4EB013622A8219FC00F58462 /* PolygonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133D2A8219C500F58462 /* PolygonUtils.swift */; };
+		4EB013632A8219FC00F58462 /* PolygonLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0133E2A8219C500F58462 /* PolygonLine.swift */; };
+		4EB013662A821ABB00F58462 /* CanvasViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013642A821ABB00F58462 /* CanvasViewModelTests.swift */; };
+		4EB0136A2A821B2100F58462 /* PolygonLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013682A821B2100F58462 /* PolygonLineTests.swift */; };
+		4EB0136B2A821B2100F58462 /* PolygonUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB013692A821B2100F58462 /* PolygonUtilsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EB013162A8219AF00F58462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB012FD2A8219AD00F58462 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EB013042A8219AD00F58462;
+			remoteInfo = DrawPolygon;
+		};
+		4EB013202A8219AF00F58462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB012FD2A8219AD00F58462 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EB013042A8219AD00F58462;
+			remoteInfo = DrawPolygon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4EB013052A8219AD00F58462 /* DrawPolygon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawPolygon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB013082A8219AD00F58462 /* DrawPolygonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPolygonApp.swift; sourceTree = "<group>"; };
+		4EB0130A2A8219AD00F58462 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4EB0130C2A8219AF00F58462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EB0130F2A8219AF00F58462 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4EB013152A8219AF00F58462 /* DrawPolygonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPolygonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB0131F2A8219AF00F58462 /* DrawPolygonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPolygonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB013232A8219AF00F58462 /* DrawPolygonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPolygonUITests.swift; sourceTree = "<group>"; };
+		4EB013252A8219AF00F58462 /* DrawPolygonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPolygonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EB013332A8219C400F58462 /* BottomActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomActionView.swift; sourceTree = "<group>"; };
+		4EB013362A8219C500F58462 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		4EB013372A8219C500F58462 /* CanvasShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasShape.swift; sourceTree = "<group>"; };
+		4EB013382A8219C500F58462 /* CanvasViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
+		4EB013392A8219C500F58462 /* CanvasProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasProperties.swift; sourceTree = "<group>"; };
+		4EB0133A2A8219C500F58462 /* HashableCGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashableCGPoint.swift; sourceTree = "<group>"; };
+		4EB0133B2A8219C500F58462 /* CanvasEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasEvent.swift; sourceTree = "<group>"; };
+		4EB0133D2A8219C500F58462 /* PolygonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonUtils.swift; sourceTree = "<group>"; };
+		4EB0133E2A8219C500F58462 /* PolygonLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonLine.swift; sourceTree = "<group>"; };
+		4EB013642A821ABB00F58462 /* CanvasViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewModelTests.swift; sourceTree = "<group>"; };
+		4EB013682A821B2100F58462 /* PolygonLineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonLineTests.swift; sourceTree = "<group>"; };
+		4EB013692A821B2100F58462 /* PolygonUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonUtilsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EB013022A8219AD00F58462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB013122A8219AF00F58462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB0131C2A8219AF00F58462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EB012FC2A8219AD00F58462 = {
+			isa = PBXGroup;
+			children = (
+				4EB013072A8219AD00F58462 /* DrawPolygon */,
+				4EB013182A8219AF00F58462 /* DrawPolygonTests */,
+				4EB013222A8219AF00F58462 /* DrawPolygonUITests */,
+				4EB013062A8219AD00F58462 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EB013062A8219AD00F58462 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EB013052A8219AD00F58462 /* DrawPolygon.app */,
+				4EB013152A8219AF00F58462 /* DrawPolygonTests.xctest */,
+				4EB0131F2A8219AF00F58462 /* DrawPolygonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EB013072A8219AD00F58462 /* DrawPolygon */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0133C2A8219C500F58462 /* Utils */,
+				4EB013322A8219C400F58462 /* BottomAction */,
+				4EB013342A8219C500F58462 /* Canvas */,
+				4EB013082A8219AD00F58462 /* DrawPolygonApp.swift */,
+				4EB0130A2A8219AD00F58462 /* ContentView.swift */,
+				4EB0130C2A8219AF00F58462 /* Assets.xcassets */,
+				4EB0130E2A8219AF00F58462 /* Preview Content */,
+			);
+			path = DrawPolygon;
+			sourceTree = "<group>";
+		};
+		4EB0130E2A8219AF00F58462 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0130F2A8219AF00F58462 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4EB013182A8219AF00F58462 /* DrawPolygonTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EB013642A821ABB00F58462 /* CanvasViewModelTests.swift */,
+				4EB013682A821B2100F58462 /* PolygonLineTests.swift */,
+				4EB013692A821B2100F58462 /* PolygonUtilsTests.swift */,
+			);
+			path = DrawPolygonTests;
+			sourceTree = "<group>";
+		};
+		4EB013222A8219AF00F58462 /* DrawPolygonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4EB013232A8219AF00F58462 /* DrawPolygonUITests.swift */,
+				4EB013252A8219AF00F58462 /* DrawPolygonUITestsLaunchTests.swift */,
+			);
+			path = DrawPolygonUITests;
+			sourceTree = "<group>";
+		};
+		4EB013322A8219C400F58462 /* BottomAction */ = {
+			isa = PBXGroup;
+			children = (
+				4EB013332A8219C400F58462 /* BottomActionView.swift */,
+			);
+			path = BottomAction;
+			sourceTree = "<group>";
+		};
+		4EB013342A8219C500F58462 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				4EB013362A8219C500F58462 /* CanvasView.swift */,
+				4EB013372A8219C500F58462 /* CanvasShape.swift */,
+				4EB013382A8219C500F58462 /* CanvasViewModel.swift */,
+				4EB013392A8219C500F58462 /* CanvasProperties.swift */,
+				4EB0133A2A8219C500F58462 /* HashableCGPoint.swift */,
+				4EB0133B2A8219C500F58462 /* CanvasEvent.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		4EB0133C2A8219C500F58462 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0133D2A8219C500F58462 /* PolygonUtils.swift */,
+				4EB0133E2A8219C500F58462 /* PolygonLine.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EB013042A8219AD00F58462 /* DrawPolygon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EB013292A8219AF00F58462 /* Build configuration list for PBXNativeTarget "DrawPolygon" */;
+			buildPhases = (
+				4EB013012A8219AD00F58462 /* Sources */,
+				4EB013022A8219AD00F58462 /* Frameworks */,
+				4EB013032A8219AD00F58462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawPolygon;
+			productName = DrawPolygon;
+			productReference = 4EB013052A8219AD00F58462 /* DrawPolygon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EB013142A8219AF00F58462 /* DrawPolygonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EB0132C2A8219AF00F58462 /* Build configuration list for PBXNativeTarget "DrawPolygonTests" */;
+			buildPhases = (
+				4EB013112A8219AF00F58462 /* Sources */,
+				4EB013122A8219AF00F58462 /* Frameworks */,
+				4EB013132A8219AF00F58462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EB013172A8219AF00F58462 /* PBXTargetDependency */,
+			);
+			name = DrawPolygonTests;
+			productName = DrawPolygonTests;
+			productReference = 4EB013152A8219AF00F58462 /* DrawPolygonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EB0131E2A8219AF00F58462 /* DrawPolygonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EB0132F2A8219AF00F58462 /* Build configuration list for PBXNativeTarget "DrawPolygonUITests" */;
+			buildPhases = (
+				4EB0131B2A8219AF00F58462 /* Sources */,
+				4EB0131C2A8219AF00F58462 /* Frameworks */,
+				4EB0131D2A8219AF00F58462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EB013212A8219AF00F58462 /* PBXTargetDependency */,
+			);
+			name = DrawPolygonUITests;
+			productName = DrawPolygonUITests;
+			productReference = 4EB0131F2A8219AF00F58462 /* DrawPolygonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EB012FD2A8219AD00F58462 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4EB013042A8219AD00F58462 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4EB013142A8219AF00F58462 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4EB013042A8219AD00F58462;
+					};
+					4EB0131E2A8219AF00F58462 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4EB013042A8219AD00F58462;
+					};
+				};
+			};
+			buildConfigurationList = 4EB013002A8219AD00F58462 /* Build configuration list for PBXProject "DrawPolygon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EB012FC2A8219AD00F58462;
+			productRefGroup = 4EB013062A8219AD00F58462 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EB013042A8219AD00F58462 /* DrawPolygon */,
+				4EB013142A8219AF00F58462 /* DrawPolygonTests */,
+				4EB0131E2A8219AF00F58462 /* DrawPolygonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EB013032A8219AD00F58462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB013102A8219AF00F58462 /* Preview Assets.xcassets in Resources */,
+				4EB0130D2A8219AF00F58462 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB013132A8219AF00F58462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB0131D2A8219AF00F58462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EB013012A8219AD00F58462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB0130B2A8219AD00F58462 /* ContentView.swift in Sources */,
+				4EB013092A8219AD00F58462 /* DrawPolygonApp.swift in Sources */,
+				4EB013422A8219C500F58462 /* CanvasViewModel.swift in Sources */,
+				4EB013412A8219C500F58462 /* CanvasShape.swift in Sources */,
+				4EB013472A8219C500F58462 /* PolygonLine.swift in Sources */,
+				4EB013442A8219C500F58462 /* HashableCGPoint.swift in Sources */,
+				4EB013402A8219C500F58462 /* CanvasView.swift in Sources */,
+				4EB013432A8219C500F58462 /* CanvasProperties.swift in Sources */,
+				4EB0133F2A8219C500F58462 /* BottomActionView.swift in Sources */,
+				4EB013462A8219C500F58462 /* PolygonUtils.swift in Sources */,
+				4EB013452A8219C500F58462 /* CanvasEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB013112A8219AF00F58462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB013542A8219F700F58462 /* CanvasViewModel.swift in Sources */,
+				4EB013552A8219F700F58462 /* CanvasShape.swift in Sources */,
+				4EB0136A2A821B2100F58462 /* PolygonLineTests.swift in Sources */,
+				4EB013662A821ABB00F58462 /* CanvasViewModelTests.swift in Sources */,
+				4EB013572A8219F700F58462 /* CanvasProperties.swift in Sources */,
+				4EB0136B2A821B2100F58462 /* PolygonUtilsTests.swift in Sources */,
+				4EB013562A8219F700F58462 /* HashableCGPoint.swift in Sources */,
+				4EB013602A8219FB00F58462 /* PolygonUtils.swift in Sources */,
+				4EB013612A8219FB00F58462 /* PolygonLine.swift in Sources */,
+				4EB013592A8219F700F58462 /* CanvasEvent.swift in Sources */,
+				4EB013582A8219F700F58462 /* CanvasView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB0131B2A8219AF00F58462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB013242A8219AF00F58462 /* DrawPolygonUITests.swift in Sources */,
+				4EB0135E2A8219F800F58462 /* CanvasView.swift in Sources */,
+				4EB0135A2A8219F800F58462 /* CanvasViewModel.swift in Sources */,
+				4EB0135C2A8219F800F58462 /* HashableCGPoint.swift in Sources */,
+				4EB0135B2A8219F800F58462 /* CanvasShape.swift in Sources */,
+				4EB0135D2A8219F800F58462 /* CanvasProperties.swift in Sources */,
+				4EB013632A8219FC00F58462 /* PolygonLine.swift in Sources */,
+				4EB013262A8219AF00F58462 /* DrawPolygonUITestsLaunchTests.swift in Sources */,
+				4EB013622A8219FC00F58462 /* PolygonUtils.swift in Sources */,
+				4EB0135F2A8219F800F58462 /* CanvasEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EB013172A8219AF00F58462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EB013042A8219AD00F58462 /* DrawPolygon */;
+			targetProxy = 4EB013162A8219AF00F58462 /* PBXContainerItemProxy */;
+		};
+		4EB013212A8219AF00F58462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EB013042A8219AD00F58462 /* DrawPolygon */;
+			targetProxy = 4EB013202A8219AF00F58462 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4EB013272A8219AF00F58462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EB013282A8219AF00F58462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EB0132A2A8219AF00F58462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DrawPolygon/Preview Content\"";
+				DEVELOPMENT_TEAM = GJ9X293G7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DrawPolygon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EB0132B2A8219AF00F58462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DrawPolygon/Preview Content\"";
+				DEVELOPMENT_TEAM = GJ9X293G7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DrawPolygon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4EB0132D2A8219AF00F58462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ9X293G7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DrawPolygonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawPolygon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrawPolygon";
+			};
+			name = Debug;
+		};
+		4EB0132E2A8219AF00F58462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ9X293G7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DrawPolygonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawPolygon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrawPolygon";
+			};
+			name = Release;
+		};
+		4EB013302A8219AF00F58462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ9X293G7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DrawPolygonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawPolygon;
+			};
+			name = Debug;
+		};
+		4EB013312A8219AF00F58462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ9X293G7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DrawPolygonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawPolygon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EB013002A8219AD00F58462 /* Build configuration list for PBXProject "DrawPolygon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB013272A8219AF00F58462 /* Debug */,
+				4EB013282A8219AF00F58462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EB013292A8219AF00F58462 /* Build configuration list for PBXNativeTarget "DrawPolygon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB0132A2A8219AF00F58462 /* Debug */,
+				4EB0132B2A8219AF00F58462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EB0132C2A8219AF00F58462 /* Build configuration list for PBXNativeTarget "DrawPolygonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB0132D2A8219AF00F58462 /* Debug */,
+				4EB0132E2A8219AF00F58462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EB0132F2A8219AF00F58462 /* Build configuration list for PBXNativeTarget "DrawPolygonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB013302A8219AF00F58462 /* Debug */,
+				4EB013312A8219AF00F58462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EB012FD2A8219AD00F58462 /* Project object */;
+}
